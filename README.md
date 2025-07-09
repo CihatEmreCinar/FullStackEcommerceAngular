@@ -1,12 +1,10 @@
-# Skinet 2024 Project Repository (the latest version of this project repo using .Net 9 and Angular 20 can be found [here](https://github.com/TryCatchLearn/skinet)
+# E-COMMERCE Project Repository (the latest version of this project repo using .Net 9 and Angular 20 can be found [here](https://github.com/TryCatchLearn/skinet)
 
-Welcome to the brand new version of the SkiNet app created for the Udemy training course available [here]https://www.udemy.com/course/learn-to-build-an-e-commerce-app-with-net-core-and-angular).
+Welcome to the brand new version of the E-COMMERCE app created for the Udemy training course available [here]https://www.udemy.com/course/learn-to-build-an-e-commerce-app-with-net-core-and-angular).
 
 This has been rewritten from scratch to take advantage of and to make it (hopefully) a bit more futureproof.  This app is built using .Net 8 and Angular 18 
 
 # Running the project
-
-You can see a live demo of this project [here](https://skinet-course.azurewebsites.net/).
 
 You can also run this app locally.  To run this project locally you will need to have installed:
 
@@ -17,14 +15,14 @@ You can also run this app locally.  To run this project locally you will need to
 
 ```bash
 # you will of course need git installed to run this
-git clone https://github.com/TryCatchLearn/skinet-2024.git
-cd skinet-2024
+git clone https://github.com/CihatEmreCinar/FullStackEcommerceAngular.git
+cd FullStackEcommerceAngular
 ```
 
 5. Restore the packages by running:
 
 ```bash
-# From the solution folder (skinet-2024)
+# From the solution folder (FullStackEcommerceAngular)
 dotnet restore
 
 # Change directory to client to run the npm install.  Only necessary if you want to run
@@ -66,7 +64,7 @@ stripe listen --forward-to https://localhost:5001/api/payments/webhook -e paymen
 9. The app uses both Sql Server and Redis.   To start these services then you need to run this command from the solution folder.  These are both configured to run on their default ports so ensure you do not have a conflicting DB server running on either port 1433 or port 6379 on your computer:
 
 ```bash
-# in the skinet-2024 folder (root directory of the app)
+# in the FullStackEcommerceAngular folder (root directory of the app)
 docker compose up -d 
 ```
 
